@@ -2,8 +2,8 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
     Name = "Heyo Hub ",
-    LoadingTitle = "Heyo Hub Loading...",
-    LoadingSubtitle = "enjoy brah",
+    LoadingTitle = "Heyo Hub",
+    LoadingSubtitle = "Loading...",
 
     ConfigurationSaving = {
         Enabled = true,
@@ -30,7 +30,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 Rayfield:Notify({
-   Title = "Thanks for using our script enjoy brah",
+   Title = "Thanks for using our script enjoy",
    Content = "just a thank you note",
    Duration = 6.5,
    Image = 11176073563,
