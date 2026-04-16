@@ -167,6 +167,22 @@ HackTab:CreateToggle({
     end
 })
 
+HackTab:CreateToggle({
+    Name = "ESP (Player Highlight)",
+    CurrentValue = false,
+    Callback = function(v)
+        espEnabled = v
+        if v then
+            while espEnabled do
+                updateESP()
+                task.wait(1)
+            end
+        else
+            removeESP()
+        end
+    end
+})
+
 --  SCRIPT TAB
 
 ScriptTab:CreateButton({
