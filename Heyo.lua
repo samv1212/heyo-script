@@ -40,8 +40,8 @@ Rayfield:Notify({
 Rayfield:LoadConfiguration() -- keep config
 
 -- Tabs
-local HackTab = Window:CreateTab(" Hacks", 4483362458)
-local ScriptTab = Window:CreateTab(" Launching Scripts", 4483362458)
+local HackTab = Window:CreateTab("Hacks", 4483362458)
+local ScriptTab = Window:CreateTab("Launching Scripts", 4483362458)
 
 -- Services
 local Players = game:GetService("Players")
@@ -167,22 +167,6 @@ HackTab:CreateToggle({
     end
 })
 
-HackTab:CreateToggle({
-    Name = "ESP (Player Highlight)",
-    CurrentValue = false,
-    Callback = function(v)
-        espEnabled = v
-        if v then
-            while espEnabled do
-                updateESP()
-                task.wait(1)
-            end
-        else
-            removeESP()
-        end
-    end
-})
-
 --  SCRIPT TAB
 
 ScriptTab:CreateButton({
@@ -191,3 +175,5 @@ ScriptTab:CreateButton({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end
 })
+
+Window.ModifyTheme('Amethyst')
