@@ -23,9 +23,9 @@ local Window = Rayfield:CreateWindow({
         Subtitle = "Key System",
         Note = "Join Discord to get key",
         FileName = "HeyoKey",
-        SaveKey = true,
+        SaveKey = false,
         GrabKeyFromSite = false,
-        Key = {"heyo123"}
+        Key = {"heyo1234567890"}
     }
 })
 
